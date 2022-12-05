@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SOKOBAN!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeyup="handleKey(event)" onload="initGame()">
+    <h1>Sokoban!</h1>
+    <h2>Move to start! </h2>
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+    <div class="difficult">
+        <button onclick="chooseDifficult(5)">Easy! 👶 </button>
+        <button onclick="chooseDifficult(8)">Medium! 👩‍🎓 </button>
+        <button onclick="chooseDifficult(10)">Hard! 👩‍🔬 </button>
+    </div>
+    <button class="reset" onclick="initGame()">RESET GAME! 🔂 </button>
+
+    <script src="js/app.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/board.js"></script>
+</body>
+
+</html>
